@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css">
+  <style>
+
+  </style>
+  <title>Transpet</title>
+</head>
+
+<body>
+
+  
+  {{> Header }}
+  {{> Bloghero }}
+  {{> BlogText }}
+  {{> BlogVideo }}
+  <br>
+  <br>
+
+  {{> BlogSwiper }}
+  <br>
+  <br>
+  {{> Blogkutular }}
+  {{> Footer }}
+
+
+
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js">
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+
+  <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+  <script>
+    const lenis = new Lenis({
+      autoRaf: true
+    });
+  </script>
+  <script>
+    function Deneme(x) {
+      x.classList.toggle("change");
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("hidden");
+      menu.classList.toggle("flex");
+    }
+
+
+  </script>
+ 
+<script>
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("[data-video]");
+    if (!a) return;
+    e.preventDefault();
+
+    Fancybox.show([{
+      src: `https://www.youtube.com/embed/${a.dataset.video}?autoplay=1&rel=0`,
+      type: "iframe",
+      width: 1000,
+      height: 563,
+    }]);
+  });
+</script>
+<script>
+  new Swiper(".haber-swiper", {
+    slidesPerView: 2.5,
+    spaceBetween: 40,
+    navigation: {
+      prevEl: ".haber-prev",
+      nextEl: ".haber-next",
+    },
+  });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transpet</title>
+
+</head>
+
+<body>
+
+  <!-- Header Alanı (Not Responsive) -->
+  <header class="w-full items-center sticky top-0 z-50 bg-white ">
+    <div class="container mx-auto  flex justify-between  ">
+      <div class=" w-fit h-fit  p-7 ">
+        <a href="index.html"><img src="img/Logo1.png" alt class=" scale-90 md:scale-100 "></a>
+      </div>
+      <div class="gap-3 md:gap-12.5 flex font-semibold   ">
+        <ul
+          class=" hidden absolute  top-full left-0 w-full flex-col items-start gap-6 bg-white p-6 shadow-xl lg:static lg:flex lg:w-auto lg:flex-row lg:items-center lg:gap-10 lg:p-5 lg:shadow-none"
+          id="mobileMenu">
+          <li class=" group flex relative lg:pb-4 lg:-mb-4 " id="kurumsalBtn">
+            <a class=" text-black/60 lg:group-hover:text-black duration-400 ease-in cursor-pointer "
+              style="font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem); ">Kurumsal</a>
+            <i
+              class="hidden lg:block arrow-down mt-3.5 group-hover:mt-2 group-hover:rotate-180 text-black/60 lg:group-hover:text-black duration-600 transition-all ease-out  ml-2 cursor-pointer "></i>
+
+
+            <!-- Dropdown Alanı -->
+            <ul
+              class=" flex gap-3 lg:block   lg:absolute md:top-full lg:left-1/2 lg:-translate-x-1/2  lg:drop-shadow-2xl lg:shadow-xl lg:w-30 lg:h-30 lg:z-51 lg:rounded-xl px-2 lg:bg-white
+                          lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-300"
+              id="dropdown">
+              <li class="lg:py-2 lg:mt-5">
+
+                <a href="" class="text-black/60 duration-400 ease-in  cursor-pointer lg:hover:text-black  "
+                  style="font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);">Hakkımızda</a>
+              </li>
+              <li class="lg:py-2">
+                <a href="" class="text-black/60 duration-400 ease-in  cursor-pointer lg:hover:text-black"
+                  style="font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);">Kariyer</a>
+              </li>
+
+            </ul>
+          </li>
+          <li class=" text-black/60 lg:hover:text-black duration-400 ease-in"
+            style="font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);">
+            <a href>Faaliyetler</a>
+          </li>
+          <li class=" text-black/60 lg:hover:text-black duration-400 ease-in"
+            style="font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);">
+            <a href>SEC</a>
+          </li>
+          <li class=" text-black/60 lg:hover:text-black duration-400 ease-in"
+            style="font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);">
+            <a href="/Blog.html">Blog</a>
+          </li>
+          <li class=" group flex relative lg:pb-4 lg:-mb-4 lg:w-fit gap-3" id="dil">
+            <a href=""
+              class=" text-black/60 lg:group-hover:text-black lg:duration-400 lg:ease-in lg:cursor-pointer flex  mt-1"
+              style="font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);"> <img src="img/Turkey.png" alt=""
+                class="px-2 scale-125 h-fit pt-1 ">TR</a>
+            <i
+              class=" hidden lg:block arrow-down mt-4 group-hover:mt-2 group-hover:rotate-180 text-black/60 group-hover:text-black duration-600 transition-all ease-out   cursor-pointer "></i>
+
+            <!-- Dropdown Alanı -->
+            <ul
+              class="lg:absolute lg:top-full lg:left-1/2 lg:-translate-x-1/2  lg:drop-shadow-2xl lg:shadow-xl lg:w-25 h-10 lg:z-51 lg:rounded-xl px-2 lg:bg-white
+                          lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-300"
+              id="dropdown2">
+              <li class="py-2">
+
+                <a href="" class="text-black/60 duration-400 ease-in  cursor-pointer lg:hover:text-black flex  "
+                  style="font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);"><img
+                    src="img/united-kingdom.png" alt="" class="px-2 h-6 "> ENG</a>
+              </li>
+
+            </ul>
+          </li>
+          <li>
+            <button class="bg-red-600 p-4 rounded-xl w-40 lg:hover:scale-105 duration-600 ease-out ">
+              <p class=" text-white duration-400 ease-in"
+                style="font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);">İletişim</p>
+            </button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div class="block lg:hidden cursor-pointer px-10 py-5" onclick="Deneme(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</body>
+
+</html>
