@@ -116,3 +116,7 @@ html.lenis, html.lenis body {
 font-size: clamp(1.00rem, calc(0.636rem + 1.818vw), 2.00rem);
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.header-link{
+font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);
+font-family: 'Franklin Gothic Medium', Arial,;
+}
