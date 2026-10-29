@@ -3,7 +3,7 @@
    
   <!--Footer Alanı (Not Responsive)-->
   <footer class="bg-[#F4F4F4] w-full h-fill mt-15">
-    <div class="container mx-auto flex flex-col md:grid md:grid-cols-2 gap-10 justify-between items-center">
+    <div class="lg:container lg:mx-auto flex flex-col md:grid md:grid-cols-2 gap-10 lg:justify-between lg:items-center">
       <!--iletişim bilgilerinin bulunduğu alan (Not Responsive)-->
       <div class=" h-fit w-fit  pt-10  ">
         <a href="#"><img src="img/Logo1.png" alt class="p-7"></a>
@@ -116,57 +116,48 @@
 
         <p class="mainmenu-aciklama py-6 ">©2024 Espa Soğutma | All Right reserved</p>
       </div>
-      <div class="flex gap-20 justify-center items-center">
+      
+      <div class="lg:flex lg:flex-row lg:gap-20 lg:justify-center lg:items-center">
         <!--Hızlı Menü (Not Responsive)-->
-        <div class="pt-10 w-fit h-full m">
-          <div class="flex flex-row">
-            <div class="bg-blue-800 rounded-full w-2 h-2 mt-3.5 mr-2"></div>
-            <p class="footer-baslik font-semibold ">
-              Hızlı Menü
-            </p>
-          </div>
-          <div class="flex flex-col gap-7 pt-5 footer-numara text-gray-500 ">
-            <a href="" class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700">Hakkımızda</a>
-            <a href="" class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700">Haberler</a>
-            <a href="" class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700">Belgeler</a>
-            <a href="" class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700">İletişim</a>
-            <a href="" class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700">Terms &
-              Conditions</a>
-            <a href=""  class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700">Privacy
-              Policy</a>
-          </div>
-        </div>
-        <!--Ürünlerimiz alanı (Not Responsive)-->
-        <div class="pt-10 w-fit h-full">
-          <div class="flex flex-row">
-            <div class="bg-blue-800 rounded-full w-2 h-2 mt-3.5 mr-2"></div>
-            <p class="footer-baslik font-semibold ">
-              Ürünlerimiz
-            </p>
-          </div>
-          <div class="flex flex-col gap-7 pt-5  footer-numara text-gray-500 ">
-            <a href=""
-              class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700 ">Fanlar</a>
-            <a href=""
-              class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700 ">Evap,
-              Kondanser ve Soğutma</a>
-            <a href=""
-              class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700 ">Kompresörler</a>
-            <a href=""
-              class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700 ">Genleşme
-              Vanaları</a>
-            <a href=""
-              class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700 ">Kontrol
-              Ekipmanları</a>
-            <a href=""
-              class="w-fit hover:text-black relative after:bg-black after:absolute after:h-px after:w-0 after:-bottom-0.5 after:left-0 hover:after:w-full after:transition-all after:duration-700 ">Hat
-              Ekipmanları</a>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="pt-10 w-full lg:w-fit h-full ">
+  <div class="footer-acc-btn flex lg:flex-row lg:border-none border-b border-black/20 w-full cursor-pointer lg:cursor-default">
+    <div class="bg-blue-800 rounded-full w-2 h-2 mt-3 ml-2 mr-2 lg:mt-3.5 lg:mr-2"></div>
+    <p class="footer-baslik2 text-xl  md:footer-baslik lg:font-semibold  ">
+      Hızlı Menü
+    </p>
+    <i class="footer-acc-icon rotate-90 arrow-down mt-2 ml-2 transition-all duration-300 ease-out lg:hidden"></i>
+  </div>
+  <div class="flex flex-col gap-7 pt-5 footer-numara text-gray-500 max-lg:hidden">
+    <a href="" class="lg:border-none w-full border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-700">Hakkımızda</a>
+    <a href="" class="w-full lg:border-none border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-700">Haberler</a>
+    <a href="" class="w-full lg:border-none border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-700">Belgeler</a>
+    <a href="" class="w-full lg:border-none border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-700">İletişim</a>
+    <a href="" class="w-full lg:border-none border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:duration-700">Terms &
+      Conditions</a>
+    <a href=""  class=" w-full lg:border-none border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:duration-700">Privacy
+      Policy</a>
+  </div>
+</div>
+<br>
+<br>
 
-
-  </footer>
-
-
+<div class="pt-10 w-full lg:w-fit h-full ">
+  <div class="footer-acc-btn flex lg:flex-row lg:border-none border-b border-black/20 w-full cursor-pointer lg:cursor-default">
+    <div class="bg-blue-800 rounded-full w-2 h-2 mt-3 ml-2 mr-2 lg:mt-3.5 lg:mr-2"></div>
+    <p class="footer-baslik2 text-xl  md:footer-baslik lg:font-semibold  ">
+      Ürünlerimiz
+    </p>
+    <i class="footer-acc-icon rotate-90 arrow-down mt-2 ml-2 transition-all duration-300 ease-out lg:hidden"></i>
+  </div>
+  <div class="flex flex-col gap-7 pt-5 footer-numara text-gray-500 max-lg:hidden">
+    <a href="" class="lg:border-none w-full border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-700">Fanlar</a>
+    <a href="" class="w-full lg:border-none border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-700">Evap, Kondanser ve Soğutma</a>
+    <a href="" class="w-full lg:border-none border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-700">Kompresörler</a>
+    <a href="" class="w-full lg:border-none border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:after:duration-700">Genleşme Vanaları</a>
+    <a href="" class="w-full lg:border-none border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:duration-700">Kontrol Ekipmanları</a>
+    <a href=""  class=" w-full lg:border-none border-b border-black/20 lg:w-fit lg:hover:text-black relative lg:after:bg-black lg:after:absolute lg:after:h-px lg:after:w-0 lg:after:-bottom-0.5 lg:after:left-0 lg:hover:after:w-full lg:after:transition-all lg:duration-700">Hat Ekipmanları</a>
+  </div>
+</div>
+<br>
+<br>
+<br>

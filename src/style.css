@@ -79,6 +79,12 @@ html.lenis, html.lenis body {
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   }
+    .footer-baslik2{
+    color: black;
+
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
   .mainmenu-learnmore{
    font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);
     color: #212353;

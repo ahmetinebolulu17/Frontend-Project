@@ -98,6 +98,52 @@
     },
   },})
 </script>
+   <script>
+  document.querySelectorAll('#mobileMenu li.group').forEach(li => {
+  const sub = li.querySelector('ul');
+  if (!sub) return;
+
+  const link = li.querySelector('a');
+  const arrow = li.querySelector('.arrow-down');
+
+  const toggleMenu = (e) => {
+    if (window.innerWidth >= 1024) return;
+    e.preventDefault();
+
+    const closed = sub.classList.toggle('hidden');
+    arrow.classList.toggle('rotate-180', closed);
+    arrow.classList.toggle('rotate-0', !closed);
+  };
+
+  link.addEventListener('click', toggleMenu);
+  arrow.addEventListener('click', toggleMenu);
+});
+  </script>
+  <script>
+    document.querySelectorAll('.footer-acc').forEach(box => {
+  const toggle = box.querySelector('.footer-acc-toggle');
+  const content = box.querySelector('.footer-acc-content');
+  const arrow = box.querySelector('.arrow-down');
+
+  toggle.addEventListener('click', () => {
+    if (window.innerWidth >= 768) return;   
+
+    const closed = content.classList.toggle('hidden');
+    arrow.classList.toggle('rotate-0', closed);
+    arrow.classList.toggle('rotate-180', !closed);
+  });
+});
+  </script>
+  <script>
+  document.querySelectorAll('.footer-acc-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const icon = btn.querySelector('.footer-acc-icon');
+      btn.nextElementSibling.classList.toggle('max-lg:hidden');
+      icon.classList.toggle('rotate-90');
+      icon.classList.toggle('rotate-180');
+    });
+  });
+</script>
 </body>
 
 </html>
