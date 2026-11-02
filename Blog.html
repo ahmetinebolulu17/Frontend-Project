@@ -68,10 +68,10 @@
     e.preventDefault();
 
     Fancybox.show([{
-      src: ``,
+      src: `img/3.mp4`,
       type: "iframe",
       width: 1000,
-      height: 563,
+      height: 600,
     }]);
   });
 </script>
@@ -134,13 +134,37 @@
   });
 });
   </script>
-  <script>
+<script>
   document.querySelectorAll('.footer-acc-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
       const icon = btn.querySelector('.footer-acc-icon');
-      btn.nextElementSibling.classList.toggle('max-md:hidden');
-      icon.classList.toggle('rotate-90');
-      icon.classList.toggle('rotate-180');
+      const open = content.classList.toggle('max-md:grid-rows-[1fr]');
+      icon.classList.toggle('rotate-90', !open);
+      icon.classList.toggle('rotate-180', open);
+    });
+  });
+</script>
+<script>
+  const accButtons = document.querySelectorAll('.acc-btn');
+
+  const setAcc = (btn, open) => {
+    btn.setAttribute('aria-expanded', String(open));
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('.acc-icon');
+    content.classList.toggle('grid-rows-[0fr]', !open);
+    content.classList.toggle('grid-rows-[1fr]', open);
+    icon.classList.toggle('fa-plus', !open);
+    icon.classList.toggle('fa-minus', open);
+  };
+
+  accButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const willOpen = btn.getAttribute('aria-expanded') !== 'true';
+      accButtons.forEach((other) => {
+        if (other !== btn) setAcc(other, false);
+      });
+      setAcc(btn, willOpen);
     });
   });
 </script>
