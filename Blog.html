@@ -68,10 +68,8 @@
     e.preventDefault();
 
     Fancybox.show([{
-      src: `img/3.mp4`,
-      type: "iframe",
-      width: 1000,
-      height: 600,
+      src: a.dataset.video,
+      type: "html5video",
     }]);
   });
 </script>
