@@ -84,7 +84,7 @@
   const arrow = box.querySelector('.arrow-down');
 
   toggle.addEventListener('click', () => {
-    if (window.innerWidth >= 768) return;   
+    if (window.innerWidth >= 1024) return;   
 
     const closed = content.classList.toggle('hidden');
     arrow.classList.toggle('rotate-0', closed);
