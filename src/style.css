@@ -1,6 +1,15 @@
 @import "tailwindcss";
+
+
+.geist {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
 body, h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Franklin Gothic Medium', Arial,;
+  font-family: 'Geist', sans-serif;
 }
 html.lenis, html.lenis body {
   height: auto;
@@ -47,49 +56,48 @@ html.lenis, html.lenis body {
     font-size: clamp(1.00rem, calc(-0.455rem + 7.273vw), 5.00rem);
     color: #212353;
     
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Geist', sans-serif;
   }
   
   .mainmenu-kucukbaslik1{
     font-size:clamp(1.00rem, calc(0.455rem + 2.727vw), 2.50rem);
     color: #212353;
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-family:'Geist', sans-serif;
   }
   .mainmenu-kucukbaslik2{
   font-size: clamp(1.00rem, calc(0.818rem + 0.909vw), 1.50rem);
     color: #212353;
 
-    font-family: 'Franklin Gothic Medium', Arial;
+font-family:'Geist', sans-serif;
   }
   .mainmenu-aciklama{
     font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem); 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial,;
+    font-family:'Geist', sans-serif;
     color: #4B5D68;
   }
   .footer-numara{
      font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem); 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Geist', sans-serif;
     
   }
   .footer-baslik{
       font-size: clamp(1.00rem, calc(0.818rem + 0.909vw), 1.50rem);
     color: black;
-
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family:'Geist', sans-serif;
 
   }
     .footer-baslik2{
     color: black;
 
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Geist', sans-serif;
 
   }
   .mainmenu-learnmore{
    font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);
     color: #212353;
 
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family:'Geist', sans-serif;
   }
   .arrow-left{
   width:13px;
@@ -104,25 +112,25 @@ html.lenis, html.lenis body {
 
 .blog-aciklama{
   color: white ;
- font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family:'Geist', sans-serif;
   font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem); 
 }
 .blog-baslik{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: clamp(1.00rem, calc(-0.545rem + 7.727vw), 5.25rem);
  color: white;
- font-size: clamp(1.00rem, calc(-0.545rem + 7.727vw), 5.25rem);
+font-family:'Geist', sans-serif;
  ;
 }
 .blog-swiperbaslik{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-family:'Geist', sans-serif;
  color: black;
   font-size: clamp(0.63rem, calc(-0.602rem + 6.136vw), 4.00rem);
 }
 .blog-kutularbaslik{
 font-size: clamp(1.00rem, calc(0.636rem + 1.818vw), 2.00rem);
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family:'Geist', sans-serif;
 }
 .header-link{
 font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);
-font-family: 'Franklin Gothic Medium', Arial,;
+font-family:'Geist', sans-serif;
 }
