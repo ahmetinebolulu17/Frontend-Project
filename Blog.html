@@ -187,6 +187,24 @@ document.querySelectorAll('.drop-trigger').forEach(function (el) {
     Fancybox.bind("[data-fancybox]");
   });
 </script>
+<script>
+  function Deneme(x) {
+    x.classList.toggle("change");
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("flex");
+
+    if (menu.classList.contains("hidden")) {
+      lenis.start();
+    } else {
+      lenis.stop();
+    }
+  }
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 1030) lenis.start();
+  });
+</script>
 </body>
 
 </html>
