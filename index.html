@@ -126,6 +126,18 @@
     });
   });
 </script>
+ <script>
+  document.querySelectorAll('.drop-trigger').forEach(function (el) {
+  el.addEventListener('click', function (e) {
+    if (window.innerWidth >= 1024) return;
+    e.preventDefault();
+    var ul = el.parentElement.querySelector('ul');
+    if (!ul) return;
+    ul.classList.toggle('hidden');
+    ul.classList.toggle('flex');
+  });
+});
+  </script>
 </body>
 
 </html>

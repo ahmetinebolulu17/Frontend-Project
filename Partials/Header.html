@@ -1,111 +1,119 @@
-<header class="w-full items-center sticky top-0 z-50 py-2 bg-white ">
-  <div class="container mx-auto  flex justify-between items-center">
-    <div class=" w-fit h-fit pl-5  ">
-      <a href="index.html"><img src="img/Logo1.png" alt class=""></a>
+<header class="w-full items-center sticky top-0 z-50 py-2 bg-white">
+  <div class="container mx-auto flex justify-between items-center">
+
+    <div class="w-fit h-fit pl-0">
+      <a href="index.html"><img src="img/Logo1.png" alt="Transpet" class="lg:w-fit lg:h-fit scale-75 sm:scale-100"></a>
     </div>
-    <div
-      class="absolute    top-full left-0 w-full flex-row items-start gap-6 bg-white  shadow-xl lg:static lg:flex lg:w-auto  lg:items-center lg:gap-10 lg:p-0 lg:shadow-none hidden"
-      id="mobileMenu">
-      <nav class="flex flex-col lg:flex-row h-fit w-full  gap-7 lg:items-center">
-        <ul class="lg:h-fit lg:w-fit w-full  border-b border-black/20 lg:border-none ">
-          <li class=" group flex flex-wrap items-center lg:flex-nowrap p-2">
 
-            <a href=""
-              class=" lg:text-black/60 lg:group-hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold h-fit ">Kurumsal</a>
-            <i
-              class=" rotate-90 lg:block arrow-down mt-0 lg:mt-1 lg:group-hover:mt-0 lg:group-hover:rotate-180 lg:text-black/60 lg:group-hover:text-black duration-400 transition-all ease-out  ml-2 cursor-pointer"></i>
+    <div class="contents lg:flex lg:items-center lg:gap-10 lg:ml-auto">
 
-            <ul
-              class=" flex gap-3 hidden lg:block  lg:absolute md:top-15  lg:drop-shadow-2xl lg:shadow-2xl lg:w-fit lg:h-fit lg:z-51 lg:rounded-xl  lg:bg-white
-                            px-2 lg:py-2 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-300 lg:border lg:border-black/20"
-              id="dropdown">
-              <li class="flex flex-col justify-center items-center text-center       ease-out duration-400 lg:border-b lg:border-black/20 lg:h-full lg:w-full  ">
+      <div
+        class="absolute top-full left-0 w-full flex-row items-start gap-6 bg-white shadow-xl lg:static lg:flex lg:w-auto lg:items-center lg:gap-10 lg:p-0 lg:shadow-none hidden"
+        id="mobileMenu">
+        <nav class="flex flex-col lg:flex-row h-fit w-full gap-7 lg:items-center">
 
+          <ul class="lg:h-fit lg:w-fit w-full border-b border-black/20 lg:border-none">
+            <li class="group flex flex-nowrap items-center lg:flex-nowrap p-2">
+              <a href=""
+                class="lg:text-black/60 lg:group-hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold h-fit pl-5 lg:pl-0">Kurumsal</a>
+              <i onclick="toggleDrop(this)"
+                class="rotate-270 lg:block text-center justify-center lg:group-hover:mt-0 lg:group-hover:rotate-360 lg:text-black/60 lg:group-hover:text-black duration-400 transition-all ease-out ml-2 cursor-pointer">
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.5899 1L5.79493 5.79493L1 1" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </i>
+
+              <ul
+                class="flex hidden gap-3 lg:block lg:absolute md:top-15 lg:drop-shadow-2xl lg:shadow-2xl lg:w-fit lg:h-fit lg:z-51 lg:rounded-xl lg:bg-white px-2 lg:py-2 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-300 lg:border lg:border-black/20">
+                <li
+                  class="flex flex-col justify-center items-center text-center ease-out duration-400 lg:border-b lg:border-black/20 lg:h-full lg:w-full">
+                  <a href=""
+                    class="cursor-pointer header-link lg:w-full lg:h-full lg:px-2 lg:py-2 lg:hover:bg-red-600 lg:hover:text-white lg:rounded-t-xl lg:ease-out lg:duration-400 text-black font-semibold ">Hakkımızda</a>
+                </li>
+                <li
+                  class="flex flex-col justify-center items-center text-center ease-out duration-400 lg:h-full lg:w-full">
+                  <a href=""
+                    class="cursor-pointer header-link lg:w-full lg:h-full lg:px-2 lg:py-2 lg:hover:bg-red-600 lg:hover:text-white lg:rounded-b-xl lg:ease-out lg:duration-400 text-black font-semibold ">Kariyer</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="h-fit border-b border-black/20 lg:border-none">
+            <li class="p-2">
+              <a href=""
+                class="text-black lg:text-black/60 lg:hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold pl-5 lg:pl-0">Faaliyetler</a>
+            </li>
+          </ul>
+
+          <ul class="h-fit border-b border-black/20 lg:border-none">
+            <li class="p-2">
+              <a href=""
+                class="text-black lg:text-black/60 lg:hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold pl-5 lg:pl-0">SEC</a>
+            </li>
+          </ul>
+
+          <ul class="h-fit border-b border-black/20 lg:border-none">
+            <li class="p-2">
+              <a href="Blog.html"
+                class="text-black lg:text-black/60 lg:hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold pl-5 lg:pl-0">Blog</a>
+            </li>
+          </ul>
+
+          <ul class="pb-5 lg:pb-0">
+            <li>
+              <div
+                class="gap-3 md:gap-12.5 flex font-semibold lg:text-center lg:items-center lg:justify-center border-b border-black/20 w-full lg:w-fit lg:border-none">
                 <a href=""
-                  class="cursor-pointer header-link lg:w-full lg:h-full lg:px-2 lg:py-2 lg:hover:bg-red-600 lg:hover:text-white lg:rounded-t-xl   lg:ease-out lg:duration-400  text-black font-semibold ">Hakkımızda</a>
-
-              </li>
-
-              <li class="flex flex-col justify-center items-center text-center       ease-out duration-400  lg:h-full lg:w-full ">
-
-                <a href=""
-                  class="cursor-pointer header-link lg:w-full lg:h-full lg:px-2 lg:py-2 lg:hover:bg-red-600 lg:hover:text-white lg:rounded-b-xl   lg:ease-out lg:duration-400  text-black font-semibold ">Kariyer</a>
-
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="h-fit border-b border-black/20 lg:border-none ">
-          <li class
-          ="p-2">
-            <a href=""
-              class=" text-black lg:text-black/60 lg:hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold">Faaliyetler</a>
-          </li>
-        </ul>
-        <ul class="h-fit border-b border-black/20 lg:border-none  ">
-          <li class="p-2">
-            <a href=""
-              class=" text-black lg:text-black/60 lg:hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold">SEC</a>
-          </li>
-        </ul>
-        <ul class="h-fit border-b border-black/20 lg:border-none ">
-          <li class="p-2">
-            <a href="Blog.html"
-              class=" text-black lg:text-black/60 lg:hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold">Blog</a>
-          </li>
-        </ul>
-        <ul class="h-fit w-fit lg:ml-0 ml-1">
-          <li class="group flex">
-
-            <a href=""
-              class=" flex text-black lg:text-black/60 lg:group-hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold ">
-              <img src="img/Turkey.png" alt="" class=" w-7 h-7">
-              <p class="w-fit h-fit lg:px-1"> TR</p>
-            </a>
-          <i
-              class=" rotate-90 lg:block arrow-down mt-1.5 lg:mt-2 lg:group-hover:mt-1.5 lg:group-hover:rotate-180 lg:text-black/60 lg:group-hover:text-black duration-400 transition-all ease-out  h-fit w-fit pr-2 lg:ml-1 ml-1 cursor-pointer"></i>
-            <ul
-              class=" hidden gap-3 lg:block w-fit h-fit   lg:absolute md:top-15  lg:drop-shadow-2xl lg:shadow-2xl lg:w-fit lg:h-fit lg:z-51 lg:rounded-xl  lg:bg-white
-                                lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-300 lg:border lg:border-black/20"
-              id="dropdown">
-
-              <li class="flex flex-col justify-center items-center text-center lg:w-full lg:h-full    lg:p-2  ease-out duration-400 ">
-
-                <a href=""
-                  class="flex cursor-pointer header-link lg:w-full lg:py-2 lg:px-5  lg:ease-out lg:duration-400 lg:bg-white lg:hover:bg-red-600 lg:hover:text-white rounded-lg  font-semibold ">
-                  <img src="img/united-kingdom.png" alt="" class="w-5 h-5 mt-1 ">
-                  <p class="px-1">ENG </p>
-                </a>
-
-              </li>
-
-
-            </ul>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <div class="gap-3 md:gap-12.5 flex font-semibold text-center items-center justify-center  ">
-              
-                <a href="" class="bg-red-600 px-5 py-3 rounded-xl w-fit h-fit  duration-400 ease-out lg:hover:bg-black ">
-                  <span class=" text-white "
+                  class="lg:bg-red-600 lg:px-5 lg:py-3 lg:rounded-xl w-fit h-fit lg:duration-400 lg:ease-out lg:hover:bg-black">
+                  <span class="text-black lg:text-white lg:pl-0 pl-7"
                     style="font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);">İletişim</span>
                 </a>
-            </div>
-          </li>
-        </ul>
+              </div>
+            </li>
+          </ul>
 
-      </nav>
+        </nav>
+      </div>
+
+      <ul class="h-fit w-fit ms-auto lg:ms-0">
+        <li class="group flex flex-nowrap items-center">
+          <a href="#"
+            class="drop-trigger flex text-black lg:text-black/60 lg:group-hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold">
+            <img src="img/Turkey.png" alt="" class="w-7 h-7 items-center justify-center">
+            <p class="w-fit h-fit lg:px-1 justify-center items-center text-center"> TR</p>
+          </a>
+
+          <i
+            class="drop-trigger p-2 rotate-270 lg:block text-center justify-center lg:group-hover:mt-0 lg:group-hover:rotate-360 lg:text-black/60 lg:group-hover:text-black duration-400 transition-all ease-out cursor-pointer">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.5899 1L5.79493 5.79493L1 1" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </i>
+
+          <ul
+            class="hidden gap-3 pl-3 lg:pl-0 lg:block w-fit h-fit lg:absolute md:top-15 lg:drop-shadow-2xl lg:shadow-2xl lg:z-51 lg:rounded-xl lg:bg-white lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-300 lg:border lg:border-black/20">
+            <li
+              class="flex flex-col justify-center items-center text-center lg:w-full lg:h-full lg:p-2 ease-out duration-400">
+              <a href="#"
+                class="flex cursor-pointer header-link lg:w-full lg:py-2 lg:px-5 lg:ease-out lg:duration-400 lg:bg-white lg:hover:bg-red-600 lg:hover:text-white rounded-lg font-semibold">
+                <img src="img/united-kingdom.png" alt="" class="w-5 h-5 lg:mt-1 items-center justify-center">
+                <p class="px-1 text-center items-center justify-center">ENG </p>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
     </div>
 
-
-
-
-    <div class="block lg:hidden cursor-pointer md:px-10 md:py-5 md:mt-3  p-7 h-fit w-fit" onclick="Deneme(this)">
+    <div class="block lg:hidden cursor-pointer md:px-10 md:py-5  p-7 h-fit w-fit" onclick="Deneme(this)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
 
-
+  </div>
 </header>
