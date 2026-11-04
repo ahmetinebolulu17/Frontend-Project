@@ -133,21 +133,22 @@ document.querySelectorAll('.drop-trigger').forEach(function (el) {
   arrow.addEventListener('click', toggleMenu);
 });
   </script>
-  <script>
-    document.querySelectorAll('.footer-acc').forEach(box => {
-  const toggle = box.querySelector('.footer-acc-toggle');
-  const content = box.querySelector('.footer-acc-content');
-  const arrow = box.querySelector('.arrow-down');
+ <script>
+  document.querySelectorAll('.footer-acc-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (window.innerWidth >= 1024) return; // masaüstünde hep açık
 
-  toggle.addEventListener('click', () => {
-    if (window.innerWidth >= 1000) return;   
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.footer-acc-icon');
+      const open = content.classList.contains('grid-rows-[0fr]');
 
-    const closed = content.classList.toggle('hidden');
-    arrow.classList.toggle('rotate-0', closed);
-    arrow.classList.toggle('rotate-180', !closed);
+      content.classList.toggle('grid-rows-[0fr]', !open);
+      content.classList.toggle('grid-rows-[1fr]', open);
+      icon.classList.toggle('rotate-90', !open);
+      icon.classList.toggle('rotate-180', open);
+    });
   });
-});
-  </script>
+</script>
 <script>
   document.querySelectorAll('.footer-acc-btn').forEach((btn) => {
     btn.addEventListener('click', () => {

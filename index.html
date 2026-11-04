@@ -95,9 +95,14 @@
 <script>
   document.querySelectorAll('.footer-acc-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
+      if (window.innerWidth >= 1024) return; // masaüstünde hep açık
+
       const content = btn.nextElementSibling;
       const icon = btn.querySelector('.footer-acc-icon');
-      const open = content.classList.toggle('max-md:grid-rows-[1fr]');
+      const open = content.classList.contains('grid-rows-[0fr]');
+
+      content.classList.toggle('grid-rows-[0fr]', !open);
+      content.classList.toggle('grid-rows-[1fr]', open);
       icon.classList.toggle('rotate-90', !open);
       icon.classList.toggle('rotate-180', open);
     });
