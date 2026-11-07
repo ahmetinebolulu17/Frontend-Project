@@ -120,22 +120,22 @@ document.querySelectorAll('.drop-trigger').forEach(function (el) {
 
   let lastY = window.scrollY;
   let ticking = false;
-  const DELTA = 8; // küçük titremeleri yoksay
+  const DELTA = 8; 
 
   const update = () => {
     const y = window.scrollY;
 
-    // Çizgi: sadece sayfa başında değilken görünsün
+   
     header.classList.toggle('header-scrolled', y > 0);
 
-    // Mobil menü açıksa header'ı gizleme
+
     const menuOpen = mobileMenu && !mobileMenu.classList.contains('hidden')
       && window.innerWidth < 1024;
 
     if (menuOpen || y <= header.offsetHeight) {
       header.classList.remove('header-hidden');
     } else if (Math.abs(y - lastY) > DELTA) {
-      // aşağı: gizle, yukarı: göster
+ r
       header.classList.toggle('header-hidden', y > lastY);
     }
 
@@ -177,7 +177,7 @@ document.querySelectorAll('.drop-trigger').forEach(function (el) {
  <script>
   document.querySelectorAll('.footer-acc-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
-      if (window.innerWidth >= 1024) return; // masaüstünde hep açık
+      if (window.innerWidth >= 1024) return; 
 
       const content = btn.nextElementSibling;
       const icon = btn.querySelector('.footer-acc-icon');
@@ -210,8 +210,8 @@ document.querySelectorAll('.drop-trigger').forEach(function (el) {
     const icon = btn.querySelector('.acc-icon');
     content.classList.toggle('grid-rows-[0fr]', !open);
     content.classList.toggle('grid-rows-[1fr]', open);
-    icon.classList.toggle('fa-plus', !open);
-    icon.classList.toggle('fa-minus', open);
+    icon.classList.toggle('rotate-90', open);
+    icon.classList.toggle('rotate-90', !open);
   };
 
   accButtons.forEach((btn) => {

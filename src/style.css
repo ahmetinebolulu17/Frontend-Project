@@ -95,7 +95,7 @@ font-family:'Geist', sans-serif;
   }
     .footer-baslik2{
     color: black;
-
+      font-size: clamp(1.00rem, calc(0.636rem + 1.818vw), 2.00rem);
   font-family:'Geist', sans-serif;
 
   }
@@ -130,7 +130,7 @@ font-family:'Geist', sans-serif;
 .blog-swiperbaslik{
  font-family:'Geist', sans-serif;
  color: black;
-  font-size: clamp(0.63rem, calc(-0.602rem + 6.136vw), 4.00rem);
+  font-size: clamp(1.00rem, calc(-0.602rem + 6.136vw), 4.00rem);
 }
 .blog-kutularbaslik{
 font-size: clamp(1.00rem, calc(0.636rem + 1.818vw), 2.00rem);
@@ -139,4 +139,14 @@ font-family:'Geist', sans-serif;
 .header-link{
 font-size: clamp(1.00rem, calc(0.955rem + 0.227vw), 1.13rem);
 font-family:'Geist', sans-serif;
+}
+.footer-logo{
+  width:20px;
+  height:1px;
+  background-color:black;
+}
+.footer-logo2{
+  width:18px;
+  height:1px;
+  background-color:black;
 }
