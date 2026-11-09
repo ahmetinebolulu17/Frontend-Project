@@ -13,33 +13,36 @@
         <nav class="flex flex-col lg:flex-row h-fit w-full gap-5 lg:gap-7 lg:items-center container mx-auto">
 
           <ul class="lg:h-fit lg:w-fit w-full h-fit border-b border-black/20 lg:border-none">
-            <li class="group flex flex-nowrap items-center lg:flex-nowrap p-0 lg:p-2">
+            <li class="dropdown-item group flex flex-wrap lg:flex-nowrap items-center p-0 lg:p-2">
+
               <a href=""
-                class="lg:text-black/60 lg:group-hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold h-fit pl-5 lg:pl-0 ">Kurumsal</a>
-              <i onclick="toggleDrop(this)"
-                class="rotate-0 lg:rotate-0 lg:block text-center justify-center lg:group-hover:mt-0 lg:group-hover:rotate-x-180 lg:text-black/60 lg:group-hover:text-black duration-300 transition-all ease-out ml-2 cursor-pointer">
+                class="dropdown-toggle max-lg:flex-1  lg:text-black/60 lg:group-hover:text-black duration-400 ease-in cursor-pointer header-link font-semibold pl-5 lg:pl-0"
+                aria-expanded="false">Kurumsal</a>
+
+              <i
+                class="dropdown-toggle dropdown-arrow block max-lg:px-5 max-lg:py-3 text-center justify-center lg:group-hover:rotate-x-180 lg:text-black/60 lg:group-hover:text-black duration-300 transition-all ease-out lg:ml-2 cursor-pointer">
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.5899 1L5.79493 5.79493L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
               </i>
 
+          
               <ul
-                class="flex hidden gap-3 lg:block lg:absolute md:top-20 lg:drop-shadow-2xl lg:shadow-2xl lg:w-fit lg:h-fit lg:z-51 lg:rounded-xl lg:bg-white px-2 lg:py-2 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-300 lg:border lg:border-black/20">
+                class="dropdown-menu hidden w-full basis-full max-lg:bg-black/5 lg:block lg:absolute md:top-20 lg:drop-shadow-2xl lg:shadow-2xl lg:w-fit lg:h-fit lg:z-51 lg:rounded-xl lg:bg-white px-2 lg:py-2 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-300 lg:border lg:border-black/20">
                 <li
                   class="flex flex-col justify-center items-center text-center ease-out duration-400 lg:border-b lg:border-black/20 lg:h-full lg:w-full">
                   <a href=""
-                    class="cursor-pointer header-link lg:w-full lg:h-full lg:px-2 lg:py-2 lg:hover:bg-red-600 lg:hover:text-white lg:rounded-t-xl lg:ease-out lg:duration-400 text-black font-semibold ">Hakkımızda</a>
+                    class="cursor-pointer header-link w-full max-lg:text-left max-lg:pl-8 max-lg:py-3 lg:px-2 lg:py-2 lg:hover:bg-red-600 lg:hover:text-white lg:rounded-t-xl lg:ease-out lg:duration-400 text-black font-semibold">Hakkımızda</a>
                 </li>
                 <li
                   class="flex flex-col justify-center items-center text-center ease-out duration-400 lg:h-full lg:w-full">
                   <a href=""
-                    class="cursor-pointer header-link lg:w-full lg:h-full lg:px-2 lg:py-2 lg:hover:bg-red-600 lg:hover:text-white lg:rounded-b-xl lg:ease-out lg:duration-400 text-black font-semibold ">Kariyer</a>
+                    class="cursor-pointer header-link w-full max-lg:text-left max-lg:pl-8 max-lg:py-3 lg:px-2 lg:py-2 lg:hover:bg-red-600 lg:hover:text-white lg:rounded-b-xl lg:ease-out lg:duration-400 text-black font-semibold">Kariyer</a>
                 </li>
               </ul>
             </li>
           </ul>
-
           <ul class="h-fit  border-b border-black/20 lg:border-none">
             <li class="p-0 lg:p-2">
               <a href=""
