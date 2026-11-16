@@ -12,7 +12,7 @@
 }
 
 #siteHeader.header-scrolled {
-  border-bottom-color: rgba(33, 35, 83, 0.4); /* eski #212353/40 */
+  border-bottom-color: rgba(33, 35, 83, 0.4); 
 }
 body, h1, h2, h3, h4, h5, h6, p {
   font-family: 'Geist', sans-serif;
