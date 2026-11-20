@@ -108,8 +108,8 @@
     e.preventDefault();
 
     const closed = sub.classList.toggle('hidden');
-    arrow.classList.toggle('rotate-180', closed);
-    arrow.classList.toggle('rotate-0', !closed);
+    arrow.classList.toggle('rotate-x-180', closed);
+    arrow.classList.toggle('rotate-x-0', !closed);
   };
 
   link.addEventListener('click', toggleMenu);
@@ -132,20 +132,20 @@
 });
   </script>
 <script>
-  document.querySelectorAll('.footer-acc-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      if (window.innerWidth >= 1024) return; // masaüstünde hep açık
+document.querySelectorAll('.footer-acc-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    if (window.innerWidth >= 1024) return;
 
-      const content = btn.nextElementSibling;
-      const icon = btn.querySelector('.footer-acc-icon');
-      const open = content.classList.contains('grid-rows-[0fr]');
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector('.footer-acc-icon');
+    const isClosed = content.classList.contains('grid-rows-[0fr]');
 
-      content.classList.toggle('grid-rows-[0fr]', !open);
-      content.classList.toggle('grid-rows-[1fr]', open);
-      icon.classList.toggle('rotate-90', !open);
-      icon.classList.toggle('rotate-180', open);
-    });
+    content.classList.toggle('grid-rows-[0fr]', !isClosed);
+    content.classList.toggle('grid-rows-[1fr]', isClosed);
+    icon.classList.toggle('rotate-x-180', isClosed);
+
   });
+});
 </script>
 <script>
   const accButtons = document.querySelectorAll('.acc-btn');
@@ -170,18 +170,26 @@
     });
   });
 </script>
- <script>
+<script>
   document.querySelectorAll('.drop-trigger').forEach(function (el) {
-  el.addEventListener('click', function (e) {
-    if (window.innerWidth >= 1024) return;
-    e.preventDefault();
-    var ul = el.parentElement.querySelector('ul');
-    if (!ul) return;
-    ul.classList.toggle('hidden');
-    ul.classList.toggle('flex');
+    el.addEventListener('click', function (e) {
+      if (window.innerWidth >= 1024) return;
+      e.preventDefault();
+
+      const li = el.closest('li');
+      const ul = li.querySelector('ul');
+      const arrow = li.querySelector('i.drop-trigger');
+      if (!ul) return;
+
+      ul.classList.toggle('hidden');
+      ul.classList.toggle('flex');
+
+      if (arrow) {
+        arrow.classList.toggle('rotate-180', !ul.classList.contains('hidden'));
+      }
+    });
   });
-});
-  </script>
+</script>
 <script>
   function Deneme(x) {
     x.classList.toggle("change");
